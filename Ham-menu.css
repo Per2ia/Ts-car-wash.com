@@ -1,0 +1,65 @@
+.ham-menu {
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 75%;
+    margin-top: -35px;
+    position: absolute;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+
+  .menu-active {
+    display: flex !important;
+  }
+
+  @media screen and (min-width: 700px) {
+    .menu {
+        display: flex;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    .ham-menu {
+        display: inline-block;
+    }
+
+    .menu {
+        padding: 0 1rem;
+        height:  auto;
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 0;
+        margin-top: 2rem;
+    }
+  }
