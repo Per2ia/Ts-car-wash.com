@@ -53,13 +53,13 @@
     }
 
     .menu {
-        padding: 0 1rem;
+        padding: 4rem 2rem;
         height:  auto;
         flex-direction: column;
     }
 
     .menu li {
         margin: 0;
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
   }
